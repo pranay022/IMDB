@@ -1,6 +1,6 @@
 import React from "react";
 
-function WatchList() {
+function WatchList({watchlist}) {
   return (
     <>
       <div className="flex justify-center flex-wrap m-4">

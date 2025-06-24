@@ -8,7 +8,22 @@ import Banner from "./components/Banner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
+  let [watchlist, setWatchList] = useState([]);
+
+  let handleAddToWatchList = (movieObj) => {
+    let newWatchList = [...watchlist, movieObj];
+    setWatchList(newWatchList);
+    console.log(newWatchList);
+  
+};
+
+  let handleRemoveFromWatchList = (movieObj) =>{
+    let filteredWatchlist = watchlist.filter((movie) =>{
+      return movie.id!= movieObj.id
+    })
+    setWatchList(filteredWatchlist)
+  }
+
 
   return (
     <>
@@ -19,11 +34,11 @@ function App() {
             path="/"
             element={
               <>
-                <Banner /> <Movies />
+                <Banner /> <Movies watchlist={watchlist} handleAddToWatchList={handleAddToWatchList} handleRemoveFromWatchList={handleRemoveFromWatchList}/>
               </>
             }
           />
-          <Route path="/watchlist" element={<WatchList />} />
+          <Route path="/watchlist" element={<WatchList watchlist={watchlist}/>} />
         </Routes>
       </BrowserRouter>
     </>
@@ -33,7 +48,6 @@ function App() {
 export default App;
 
 // https://api.themoviedb.org/3/movie/popular?api_key=17b9b19d2f191deebddbf636462abc05&language=en-US&page=1
-
 
 // 17b9b19d2f191deebddbf636462abc05
 
