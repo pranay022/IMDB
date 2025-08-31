@@ -1,12 +1,59 @@
-# React + Vite
+<!-- IMDB React Project -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# IMDB Movie App
 
-Currently, two official plugins are available:
+An interactive movie browser built with React and Vite, allowing users to explore movies, view details, and manage a personal watchlist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Browse popular movies
+- View movie details and banners
+- Add/remove movies to/from your Watchlist
+- Pagination for easy navigation
+- Responsive design
 
-## Expanding the ESLint configuration
+## Technologies Used
+- React
+- Vite
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+- Node.js (v16 or above recommended)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+	```cmd
+	git clone https://github.com/pranay022/IMDB.git
+	```
+2. Navigate to the project directory:
+	```cmd
+	cd "IMDB"
+	```
+3. Install dependencies:
+	```cmd
+	npm install
+	```
+
+### Running the App
+Start the development server:
+```cmd
+npm run dev
+```
+The app will be available at `http://localhost:5173` (default Vite port).
+
+## Project Structure
+
+```
+src/
+  components/      # React components (Banner, MovieCard, Movies, Navbar, Pagination, WatchList)
+  assets/          # Images and icons
+  util/            # Utility functions
+  App.jsx          # Main App component
+  main.jsx         # Entry point
+public/            # Static files
+```
+
+## License
+This project is licensed under the MIT License.

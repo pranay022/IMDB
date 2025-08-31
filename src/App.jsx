@@ -55,9 +55,3 @@ function App() {
 }
 
 export default App;
-
-// https://api.themoviedb.org/3/movie/popular?api_key=17b9b19d2f191deebddbf636462abc05&language=en-US&page=1
-
-// 17b9b19d2f191deebddbf636462abc05
-
-// eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxN2I5YjE5ZDJmMTkxZGVlYmRkYmY2MzY0NjJhYmMwNSIsIm5iZiI6MTc1MDYzOTkwNS4zNiwic3ViIjoiNjg1OGE1MjFlYWZlMmU0MjQzNDkzNTFlIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.iD9ip35SGrULSuwMAaKqReUz4jYwTbIKVII49B-MXKA
